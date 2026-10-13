@@ -1,0 +1,29 @@
+description: "工单抽取 v1 vs v2 对照"
+
+prompts:
+  - file://prompts/v1.yaml
+  - file://prompts/v2.yaml
+
+providers:
+  - id: "ollama:chat:qwen3-4b-json"
+    config:
+      temperature: 0
+      num_predict: 512
+  - id: "ollama:chat:qwen3:8b"
+    config:
+      temperature: 0
+      num_ctx: 4096
+      think: false
+
+tests: file://evals/golden-set.csv
+
+defaultTest:
+  assert:
+    - type: is-json
+    - type: latency
+      threshold: 5000
+
+options:
+  maxConcurrency: 1          # 8G 显存必须串行，否则 OOM
+  transform: output.replace(/```json\n?|```\n?/g, '').trim()   # 剥掉 markdown 包裹
+  cache: true

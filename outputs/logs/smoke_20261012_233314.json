@@ -1,0 +1,16 @@
+{
+  "ts": "2026-10-12T23:33:14.886061",
+  "prompt_version": "v1",
+  "model": "qwen3:4b",
+  "case_id": "smoke-01",
+  "input": {
+    "text": "这台手机电池太不耐用了"
+  },
+  "expect": null,
+  "output_raw": "{\"category\": null, \"severity\": null, \"need_human\": null}",
+  "reply": "",
+  "prompt_tokens": 157,
+  "completion_tokens": 1574,
+  "latency_ms": 16513.18860054016,
+  "error": null
+}

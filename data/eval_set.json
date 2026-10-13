@@ -1,0 +1,82 @@
+[
+  {
+    "case_id": "case_001",
+    "intent": "售前咨询",
+    "text": "这款手机支持5G网络吗？续航怎么样？",
+    "standard_reply": "您好！这款手机支持5G网络，配备5000mAh大电池，正常使用可续航1-2天。请问还需要了解其他参数吗？",
+    "order_id": null,
+    "expect": {"category": "售前咨询"}
+  },
+  {
+    "case_id": "case_006",
+    "intent": "售前咨询",
+    "text": "这个跑步机最大承重多少？能折叠收纳吗？",
+    "standard_reply": "您好！这款跑步机最大承重120kg，支持折叠收纳，折叠后占地仅0.5平米。非常适合家用。需要了解其他功能吗？",
+    "order_id": null,
+    "expect": {"category": "售前咨询"}
+  },
+  {
+    "case_id": "case_011",
+    "intent": "售后投诉",
+    "text": "你们这什么破质量，用了三天就坏了，我要投诉！",
+    "standard_reply": "非常抱歉给您带来不好的体验！请您提供订单号，我们马上为您处理售后问题，会尽快给您一个满意的解决方案。",
+    "order_id": null,
+    "expect": {"category": "售后投诉"}
+  },
+  {
+    "case_id": "case_016",
+    "intent": "售后投诉",
+    "text": "充电器用了两天就充不进电了，质量太差了！",
+    "standard_reply": "非常抱歉给您带来不便！充电器属于质量问题，我们支持15天无理由换新。请您提供订单号，我们立即为您安排换新。",
+    "order_id": null,
+    "expect": {"category": "售后投诉"}
+  },
+  {
+    "case_id": "case_021",
+    "intent": "物流查询",
+    "text": "我的快递到哪了？订单号是JD20261012001",
+    "standard_reply": "您好！已为您查询订单JD20261012001，您的包裹正在运输中，预计明天送达。请您耐心等待。",
+    "order_id": "JD20261012001",
+    "expect": {"category": "物流查询"}
+  },
+  {
+    "case_id": "case_026",
+    "intent": "物流查询",
+    "text": "我的快递被退回了，怎么回事？订单号是ZT20261012006",
+    "standard_reply": "您好！已为您查询订单ZT20261012006，因地址无法联系到您导致退回。我们已联系快递拦截，请您确认正确地址后重新派送。",
+    "order_id": "ZT20261012006",
+    "expect": {"category": "物流查询"}
+  },
+  {
+    "case_id": "case_031",
+    "intent": "退换货",
+    "text": "衣服尺码不合适，想换个大一号的，怎么操作？",
+    "standard_reply": "您好！支持7天无理由退换货。请您在订单页面点击“申请售后”，选择换货并填写原因，审核通过后即可寄回。",
+    "order_id": null,
+    "expect": {"category": "退换货"}
+  },
+  {
+    "case_id": "case_036",
+    "intent": "退换货",
+    "text": "退款多久能到账？我已经寄回商品了",
+    "standard_reply": "您好！商品签收后1-3个工作日内退款原路退回。请您关注退款进度，如有异常可随时联系我们。",
+    "order_id": null,
+    "expect": {"category": "退换货"}
+  },
+  {
+    "case_id": "case_041",
+    "intent": "其他",
+    "text": "你们客服电话是多少？工作时间是几点？",
+    "standard_reply": "您好！我们的客服热线是400-888-8888，工作时间是每天9:00-21:00。请问有什么可以帮您？",
+    "order_id": null,
+    "expect": {"category": "其他"}
+  },
+  {
+    "case_id": "case_046",
+    "intent": "其他",
+    "text": "商品怎么保修？保修期多久？",
+    "standard_reply": "您好！不同商品保修期不同，一般电子产品保修1年，家电保修3年。您可以在商品详情页查看具体保修政策。",
+    "order_id": null,
+    "expect": {"category": "其他"}
+  }
+]
