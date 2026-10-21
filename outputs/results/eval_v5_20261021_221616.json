@@ -1,0 +1,150 @@
+{
+  "prompt_version": "v5",
+  "model": "qwen3:4b",
+  "eval_time": "2026-10-21 22:16:16",
+  "sample_size": 10,
+  "metrics": {
+    "accuracy": 1.0,
+    "per_class": {
+      "其他": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "售前咨询": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "售后投诉": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "物流查询": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "退换货": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      }
+    },
+    "macro_f1": 1.0
+  },
+  "cost": {
+    "total_tokens": 20735,
+    "total_cost_yuan": 0.0,
+    "avg_cost_per_case": 0.0,
+    "avg_latency_ms": 12333.53
+  },
+  "results": [
+    {
+      "case_id": "case_001",
+      "input": "这款手机支持5G网络吗？续航怎么样？",
+      "true_intent": "售前咨询",
+      "pred_intent": "售前咨询",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 1699,
+      "latency_ms": 20491.169452667236
+    },
+    {
+      "case_id": "case_006",
+      "input": "这个跑步机最大承重多少？能折叠收纳吗？",
+      "true_intent": "售前咨询",
+      "pred_intent": "售前咨询",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 1548,
+      "latency_ms": 7022.624492645264
+    },
+    {
+      "case_id": "case_011",
+      "input": "你们这什么破质量，用了三天就坏了，我要投诉！",
+      "true_intent": "售后投诉",
+      "pred_intent": "售后投诉",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 2088,
+      "latency_ms": 11094.36297416687
+    },
+    {
+      "case_id": "case_016",
+      "input": "充电器用了两天就充不进电了，质量太差了！",
+      "true_intent": "售后投诉",
+      "pred_intent": "售后投诉",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 2191,
+      "latency_ms": 11870.313882827759
+    },
+    {
+      "case_id": "case_021",
+      "input": "我的快递到哪了？订单号是JD20261012001",
+      "true_intent": "物流查询",
+      "pred_intent": "物流查询",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 2100,
+      "latency_ms": 11056.405067443848
+    },
+    {
+      "case_id": "case_026",
+      "input": "我的快递被退回了，怎么回事？订单号是ZT20261012006",
+      "true_intent": "物流查询",
+      "pred_intent": "物流查询",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 2311,
+      "latency_ms": 12935.317516326904
+    },
+    {
+      "case_id": "case_031",
+      "input": "衣服尺码不合适，想换个大一号的，怎么操作？",
+      "true_intent": "退换货",
+      "pred_intent": "退换货",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 1834,
+      "latency_ms": 9103.950262069702
+    },
+    {
+      "case_id": "case_036",
+      "input": "退款多久能到账？我已经寄回商品了",
+      "true_intent": "退换货",
+      "pred_intent": "退换货",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 1967,
+      "latency_ms": 10272.090911865234
+    },
+    {
+      "case_id": "case_041",
+      "input": "你们客服电话是多少？工作时间是几点？",
+      "true_intent": "其他",
+      "pred_intent": "其他",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 2329,
+      "latency_ms": 13389.963388442993
+    },
+    {
+      "case_id": "case_046",
+      "input": "商品怎么保修？保修期多久？",
+      "true_intent": "其他",
+      "pred_intent": "其他",
+      "is_correct": true,
+      "reply": "",
+      "tokens": 2668,
+      "latency_ms": 16099.08652305603
+    }
+  ]
+}

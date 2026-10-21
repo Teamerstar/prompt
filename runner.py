@@ -85,7 +85,7 @@ def main():
     
     parser = argparse.ArgumentParser(description="电商客服意图识别与话术生成系统")
     parser.add_argument("--text", default="这台手机电池太不耐用了", help="测试文本")
-    parser.add_argument("--version", default="v1", help="Prompt版本号")
+    parser.add_argument("--version", default="v5", help="Prompt版本号")
     parser.add_argument("--eval", action="store_true", help="运行完整评估")
     parser.add_argument("--sample", type=int, default=None, help="评估样本数量")
     

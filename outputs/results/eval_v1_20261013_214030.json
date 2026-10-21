@@ -1,0 +1,150 @@
+{
+  "prompt_version": "v1",
+  "model": "qwen3:4b",
+  "eval_time": "2026-10-13 21:40:30",
+  "sample_size": 10,
+  "metrics": {
+    "accuracy": 0.9,
+    "per_class": {
+      "其他": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667,
+        "support": 2
+      },
+      "售前咨询": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "support": 2
+      },
+      "售后投诉": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "物流查询": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "退换货": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      }
+    },
+    "macro_f1": 0.8933
+  },
+  "cost": {
+    "total_tokens": 24630,
+    "total_cost_yuan": 0.0,
+    "avg_cost_per_case": 0.0,
+    "avg_latency_ms": 21455.34
+  },
+  "results": [
+    {
+      "case_id": "case_001",
+      "input": "这款手机支持5G网络吗？续航怎么样？",
+      "true_intent": "售前咨询",
+      "pred_intent": "售前咨询",
+      "is_correct": true,
+      "reply": "您好！这款手机全系支持5G网络，续航持久，可连续使用一整天。现在下单享限时8折优惠，截止本周五，欢迎立即选购！",
+      "tokens": 2392,
+      "latency_ms": 23464.71381187439
+    },
+    {
+      "case_id": "case_006",
+      "input": "这个跑步机最大承重多少？能折叠收纳吗？",
+      "true_intent": "售前咨询",
+      "pred_intent": "售前咨询",
+      "is_correct": true,
+      "reply": "您好！这款跑步机最大承重200kg，支持一键折叠收纳，节省空间超便捷。现在下单立享8折优惠，24小时内确认发货，立即开启健康生活吧！（39字）",
+      "tokens": 2251,
+      "latency_ms": 18992.133617401123
+    },
+    {
+      "case_id": "case_011",
+      "input": "你们这什么破质量，用了三天就坏了，我要投诉！",
+      "true_intent": "售后投诉",
+      "pred_intent": "售后投诉",
+      "is_correct": true,
+      "reply": "您好！非常抱歉产品在三天内出现问题，这确实影响您的体验。我们已立即启动退换货流程，24小时内为您完成退款或换货。请提供订单号以便快速处理，感谢您的理解与支持！",
+      "tokens": 1947,
+      "latency_ms": 16600.132942199707
+    },
+    {
+      "case_id": "case_016",
+      "input": "充电器用了两天就充不进电了，质量太差了！",
+      "true_intent": "售后投诉",
+      "pred_intent": "售后投诉",
+      "is_correct": true,
+      "reply": "您好！非常抱歉充电器出现质量问题，我们深表歉意。请提供订单号，我们将立即启动退换货流程，预计24小时内完成处理。感谢您的理解与支持！",
+      "tokens": 2028,
+      "latency_ms": 17754.234075546265
+    },
+    {
+      "case_id": "case_021",
+      "input": "我的快递到哪了？订单号是JD20261012001",
+      "true_intent": "物流查询",
+      "pred_intent": "物流查询",
+      "is_correct": true,
+      "reply": "您好！订单JD20261012001物流状态：快递已发出，预计24小时内送达。快递员将主动联系您。如有问题，请随时告知！祝您生活愉快！（98字）",
+      "tokens": 2157,
+      "latency_ms": 18530.972003936768
+    },
+    {
+      "case_id": "case_026",
+      "input": "我的快递被退回了，怎么回事？订单号是ZT20261012006",
+      "true_intent": "物流查询",
+      "pred_intent": "物流查询",
+      "is_correct": true,
+      "reply": "您好！订单ZT20261012006的快递因地址信息有误被退回。我们将在24小时内重新发货，预计明天上午送达。请留意短信通知，感谢您的支持！",
+      "tokens": 3198,
+      "latency_ms": 27406.843662261963
+    },
+    {
+      "case_id": "case_031",
+      "input": "衣服尺码不合适，想换个大一号的，怎么操作？",
+      "true_intent": "退换货",
+      "pred_intent": "退换货",
+      "is_correct": true,
+      "reply": "您好！感谢您的反馈。衣服尺码不合适可免费换货，请提供订单号，我们将在24小时内审核，换货预计3-5个工作日内完成。注意：需在7天内申请，保持原包装哦！（58字）",
+      "tokens": 2614,
+      "latency_ms": 22471.06122970581
+    },
+    {
+      "case_id": "case_036",
+      "input": "退款多久能到账？我已经寄回商品了",
+      "true_intent": "退换货",
+      "pred_intent": "退换货",
+      "is_correct": true,
+      "reply": "您好！感谢您寄回商品。我们将在1-2个工作日内完成审核，审核通过后，退款将原路返回，预计3-5个工作日内到账。请提供物流单号，以便我们快速处理。😊",
+      "tokens": 2779,
+      "latency_ms": 24549.893617630005
+    },
+    {
+      "case_id": "case_041",
+      "input": "你们客服电话是多少？工作时间是几点？",
+      "true_intent": "其他",
+      "pred_intent": "其他",
+      "is_correct": true,
+      "reply": "您好！感谢您的咨询。客服电话：400-123-4567；工作时间：周一至周日 9:00-21:00。如有问题，我们将24小时内高效响应，祝您购物愉快！",
+      "tokens": 2698,
+      "latency_ms": 23137.06398010254
+    },
+    {
+      "case_id": "case_046",
+      "input": "商品怎么保修？保修期多久？",
+      "true_intent": "其他",
+      "pred_intent": "售前咨询",
+      "is_correct": false,
+      "reply": "您好！本商品享整机1年免费保修，覆盖所有硬件故障。为保障您的安心体验，请立即下单，即享专属保修保障。祝您购物愉快！（48字）",
+      "tokens": 2566,
+      "latency_ms": 21646.339654922485
+    }
+  ]
+}

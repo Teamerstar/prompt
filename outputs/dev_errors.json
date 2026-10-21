@@ -1,0 +1,65 @@
+[
+  {
+    "case_id": "case_028",
+    "text": "能改下收货地址吗？快递还没发出，订单号是TB20261012008",
+    "true": "物流查询",
+    "pred": "退换货",
+    "raw_output": "{\"category\": \"退换货\", \"severity\": \"低\", \"need_human\": true}"
+  },
+  {
+    "case_id": "case_034",
+    "text": "收到的商品有质量问题想退货，运费谁承担？",
+    "true": "退换货",
+    "pred": "售后投诉",
+    "raw_output": "{\"category\": \"售后投诉\", \"severity\": \"高\", \"need_human\": true}"
+  },
+  {
+    "case_id": "case_042",
+    "text": "怎么开发票？需要提供什么信息？",
+    "true": "其他",
+    "pred": "售前咨询",
+    "raw_output": "{\"category\": \"售前咨询\", \"severity\": \"低\", \"need_human\": false}"
+  },
+  {
+    "case_id": "case_043",
+    "text": "会员积分怎么查询和使用？",
+    "true": "其他",
+    "pred": "售前咨询",
+    "raw_output": "{\"category\": \"售前咨询\", \"severity\": \"低\", \"need_human\": false}"
+  },
+  {
+    "case_id": "case_044",
+    "text": "优惠券怎么领取？有使用门槛吗？",
+    "true": "其他",
+    "pred": "售前咨询",
+    "raw_output": "{\"category\": \"售前咨询\", \"severity\": \"低\", \"need_human\": false}"
+  },
+  {
+    "case_id": "case_045",
+    "text": "怎么联系人工客服？智能客服解决不了我的问题",
+    "true": "其他",
+    "pred": "售后投诉",
+    "raw_output": "{\"category\": \"售后投诉\", \"severity\": \"高\", \"need_human\": true}"
+  },
+  {
+    "case_id": "case_048",
+    "text": "怎么取消订单？退款什么时候到账？",
+    "true": "其他",
+    "pred": "退换货",
+    "raw_output": "{\"category\": \"退换货\", \"severity\": \"低\", \"need_human\": true}"
+  },
+  {
+    "case_id": "case_049",
+    "text": "你们有实体店吗？在哪里可以体验产品？",
+    "true": "其他",
+    "pred": "售前咨询",
+    "raw_output": "{\"category\": \"售前咨询\", \"severity\": \"低\", \"need_human\": false}"
+  },
+  {
+    "case_id": "case_050",
+    "text": "怎么成为会员？有什么权益？",
+    "true": "其他",
+    "pred": "售前咨询",
+    "raw_output": "{\"category\": \"售前咨询\", \"severity\": \"低\", \"need_human\": false}"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "case_002",
+    "text": "这个耳机有白色款吗？什么时候能发货？",
+    "true": "售前咨询",
+    "pred": "其他",
+    "raw_output": ""
+  },
+  {
+    "case_id": "case_013",
+    "text": "收到的货是坏的，屏幕都碎了，你们怎么发货的？",
+    "true": "售后投诉",
+    "pred": "其他",
+    "raw_output": ""
+  },
+  {
+    "case_id": "case_018",
+    "text": "你们发的货少了一件，客服还说是我的问题，太气人了！",
+    "true": "售后投诉",
+    "pred": "其他",
+    "raw_output": ""
+  },
+  {
+    "case_id": "case_023",
+    "text": "快递显示签收了但我没收到货，订单号是PD20261012003",
+    "true": "物流查询",
+    "pred": "其他",
+    "raw_output": ""
+  },
+  {
+    "case_id": "case_028",
+    "text": "能改下收货地址吗？快递还没发出，订单号是TB20261012008",
+    "true": "物流查询",
+    "pred": "其他",
+    "raw_output": ""
+  },
+  {
+    "case_id": "case_032",
+    "text": "鞋子买大了想换小一码，运费谁出？",
+    "true": "退换货",
+    "pred": "其他",
+    "raw_output": ""
+  },
+  {
+    "case_id": "case_033",
+    "text": "手机用了7天想退货，可以吗？怎么退？",
+    "true": "退换货",
+    "pred": "其他",
+    "raw_output": ""
+  },
+  {
+    "case_id": "case_048",
+    "text": "怎么取消订单？退款什么时候到账？",
+    "true": "其他",
+    "pred": "退换货",
+    "raw_output": "{\"category\": \"退换货\", \"severity\": \"低\", \"need_human\": false}"
+  }
+]

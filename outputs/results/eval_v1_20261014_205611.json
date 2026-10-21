@@ -1,0 +1,150 @@
+{
+  "prompt_version": "v1",
+  "model": "qwen3:4b",
+  "eval_time": "2026-10-14 20:56:11",
+  "sample_size": 10,
+  "metrics": {
+    "accuracy": 0.8,
+    "per_class": {
+      "其他": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 2
+      },
+      "售前咨询": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "support": 2
+      },
+      "售后投诉": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "物流查询": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "退换货": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      }
+    },
+    "macro_f1": 0.7333
+  },
+  "cost": {
+    "total_tokens": 24106,
+    "total_cost_yuan": 0.0,
+    "avg_cost_per_case": 0.0,
+    "avg_latency_ms": 21978.52
+  },
+  "results": [
+    {
+      "case_id": "case_001",
+      "input": "这款手机支持5G网络吗？续航怎么样？",
+      "true_intent": "售前咨询",
+      "pred_intent": "售前咨询",
+      "is_correct": true,
+      "reply": "您好！这款手机全系支持5G网络，续航强劲（单次充电可使用全天），满足高强度使用需求。现在下单立享8折优惠，欢迎立即购买！（38字）",
+      "tokens": 1764,
+      "latency_ms": 18809.93342399597
+    },
+    {
+      "case_id": "case_006",
+      "input": "这个跑步机最大承重多少？能折叠收纳吗？",
+      "true_intent": "售前咨询",
+      "pred_intent": "售前咨询",
+      "is_correct": true,
+      "reply": "您好！感谢咨询。本跑步机最大承重150kg，支持一键折叠收纳，节省空间又便捷。现在下单享限时8折优惠，立即开启健康生活吧！（38字）",
+      "tokens": 2248,
+      "latency_ms": 19399.467706680298
+    },
+    {
+      "case_id": "case_011",
+      "input": "你们这什么破质量，用了三天就坏了，我要投诉！",
+      "true_intent": "售后投诉",
+      "pred_intent": "售后投诉",
+      "is_correct": true,
+      "reply": "非常抱歉产品在三天内出现故障！请提供订单号，我们将24小时内核实问题，并在48小时内完成退换货处理。感谢您的理解与支持！（98字）",
+      "tokens": 2163,
+      "latency_ms": 19938.047647476196
+    },
+    {
+      "case_id": "case_016",
+      "input": "充电器用了两天就充不进电了，质量太差了！",
+      "true_intent": "售后投诉",
+      "pred_intent": "售后投诉",
+      "is_correct": true,
+      "reply": "您好！非常抱歉充电器出现质量问题。我们立即为您办理免费退换货，只需提供订单号，24小时内完成处理。感谢您的理解与支持！",
+      "tokens": 2007,
+      "latency_ms": 17546.958684921265
+    },
+    {
+      "case_id": "case_021",
+      "input": "我的快递到哪了？订单号是JD20261012001",
+      "true_intent": "物流查询",
+      "pred_intent": "物流查询",
+      "is_correct": true,
+      "reply": "您好！您的订单JD20261012001的快递正在运输中，预计明天送达。感谢您的耐心等待，如有其他问题请随时联系！",
+      "tokens": 2654,
+      "latency_ms": 23406.75663948059
+    },
+    {
+      "case_id": "case_026",
+      "input": "我的快递被退回了，怎么回事？订单号是ZT20261012006",
+      "true_intent": "物流查询",
+      "pred_intent": "物流查询",
+      "is_correct": true,
+      "reply": "您好！订单ZT20261012006物流状态显示：快递已退回。我们将在24小时内重新发货，预计新物流48小时内送达。请放心，我们会及时跟进！感谢您的耐心等待！",
+      "tokens": 2640,
+      "latency_ms": 23326.714515686035
+    },
+    {
+      "case_id": "case_031",
+      "input": "衣服尺码不合适，想换个大一号的，怎么操作？",
+      "true_intent": "退换货",
+      "pred_intent": "退换货",
+      "is_correct": true,
+      "reply": "您好！很抱歉衣服尺码不合适。请提供订单号和商品照片，我们将在24小时内审核并为您换大一号尺码。退换货需在7天内有效，请及时操作。感谢支持！",
+      "tokens": 2880,
+      "latency_ms": 24979.234218597412
+    },
+    {
+      "case_id": "case_036",
+      "input": "退款多久能到账？我已经寄回商品了",
+      "true_intent": "退换货",
+      "pred_intent": "退换货",
+      "is_correct": true,
+      "reply": "您好！感谢您寄回商品。审核通过后，退款将在3-5个工作日内原路退回。请确保寄回凭证清晰，以便快速处理。如有问题，随时联系！",
+      "tokens": 2775,
+      "latency_ms": 26258.586406707764
+    },
+    {
+      "case_id": "case_041",
+      "input": "你们客服电话是多少？工作时间是几点？",
+      "true_intent": "其他",
+      "pred_intent": "售前咨询",
+      "is_correct": false,
+      "reply": "您好！客服电话：400-123-4567，工作时间：9:00-21:00。热销产品限时优惠中，立即下单享专属福利，欢迎随时选购哦！（49字）",
+      "tokens": 2106,
+      "latency_ms": 20247.641563415527
+    },
+    {
+      "case_id": "case_046",
+      "input": "商品怎么保修？保修期多久？",
+      "true_intent": "其他",
+      "pred_intent": "售前咨询",
+      "is_correct": false,
+      "reply": "您好！本产品提供1年免费保修服务，覆盖所有硬件故障，下单即享，无需额外操作。立即购买，安心无忧！（38字）",
+      "tokens": 2869,
+      "latency_ms": 25871.885776519775
+    }
+  ]
+}
